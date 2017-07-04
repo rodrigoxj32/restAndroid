@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    //consultar
+    //consultar LIBROS POR GET METODO INDEX DE LARAVEL
     public void consultarLibroWeb(View v) {
 
         List<Libro> libros;
@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
+/*GUARDA POR METODO POST SE CONECTA AL METODO STORE DE LARAVEL*/
     public void guardarHTTP(View v){
 
     System.out.println("entro al metodo");

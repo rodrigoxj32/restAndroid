@@ -11,7 +11,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 import javax.net.ssl.HttpsURLConnection;
-
+/*NO VEAN ESTO ERA UNA PRUEBA*/
 public class HttpURLConnectionExample {
 
     private final String USER_AGENT = "Mozilla/5.0";
