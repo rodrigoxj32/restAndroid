@@ -6,7 +6,7 @@ package com.example.rodrigo.rest;
 
 public class Conexion{
 
-    public String URLLocal = "http://192.168.1.4:8000/";
+    public String URLLocal = "http://192.168.1.6:8000/";
 
     public Conexion() {}
 

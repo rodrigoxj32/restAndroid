@@ -21,6 +21,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.StrictMode;
 import android.annotation.SuppressLint;
 
+import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.StatusLine;
@@ -161,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
 // Creando objetos de conexion
         HttpClient cliente = new DefaultHttpClient();
 
-        HttpPost httpPost = new HttpPost("http://192.168.1.4:8000/documento");
+        HttpPost httpPost = new HttpPost("http://192.168.1.6:8000/documento");
 
         httpPost.setHeader("content-type", "application/json");
         //httpPost.setHeader("Content-Type","application/x-www-form-urlencoded");
@@ -189,9 +190,11 @@ public class MainActivity extends AppCompatActivity {
             int codigoEstado = estado.getStatusCode();
 
 
+
             String resultado = EntityUtils.toString(resp.getEntity());
             System.out.println("respuesta dl http "+resp);
             System.out.println("codigo del estado: "+codigoEstado);
+            System.out.println("resultado: "+resultado);
         }catch (Exception e){
             System.out.println("entro en el catch");
         }
